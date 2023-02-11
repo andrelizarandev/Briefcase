@@ -2,7 +2,7 @@ export const EducationList:EducationCardContent[] = [
   { 
     title:'Instituto Tecnológico de Veracruz', 
     description:'Computer Systems Enginnering', 
-    image:'./public/itver.png', 
+    image:'/public/itver.png', 
     time:'August 2018 - July 2023' 
   }
 ]
