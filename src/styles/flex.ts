@@ -6,9 +6,13 @@ const FlexStyle = {
   },
 
   RowAlignCenterJustifyBetween: {
-    flexDirection:'row',
+    flexDirection:{
+      xs:'column',
+      md:'row'
+    },
     alignItems:'center',
-    justifyContent:'space-between'
+    justifyContent:'space-between',
+    rowGap:1
   },
 
   Row: {
@@ -18,7 +22,8 @@ const FlexStyle = {
   RowColumnGap2:{ 
     flexDirection:'row',
     columnGap:2,
-    flexWrap:'wrap'
+    flexWrap:'wrap',
+    rowGap:2
   },
 
   RowColumnGap2RowGap2:{ 

@@ -13,7 +13,10 @@ const PageContainerStyle = {
 
   MainPaddingContainer: {
     padding:2,
-    paddingTop:10,
+    paddingTop:{
+      xs:14,
+      md:12
+    },
     height:'100%',
     rowGap:2
   },
@@ -23,6 +26,7 @@ const PageContainerStyle = {
     width:'100%',
     position:'fixed',
     top:0,
+    zIndex:1
   },
 
   TopBarPaddingContainer: {

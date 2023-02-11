@@ -32,12 +32,9 @@ function TopBar () {
         <Typography color='white' variant='subtitle2' textTransform='uppercase'>André Lizarán</Typography>
         <Stack sx={FlexStyle.RowColumnGap2}>
           <Stack sx={FlexStyle.Row}>
-            <WhiteTextButton size='small'>About Me</WhiteTextButton>
-            <WhiteTextButton size='small'>Education</WhiteTextButton>
-            <WhiteTextButton size='small'>Tools</WhiteTextButton>
-            <WhiteTextButton size='small'>Experience</WhiteTextButton>
+            <WhiteTextButton size='small'>Contact Me</WhiteTextButton>
           </Stack>
-          <GreenFilledButton size='small'>Contacts</GreenFilledButton>
+          <GreenFilledButton size='small'>Change Languaje</GreenFilledButton>
         </Stack>
       </Stack>
     </Stack>

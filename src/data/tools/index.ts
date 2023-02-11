@@ -1,23 +1,29 @@
+// Modules
+import CodeIcon from '@mui/icons-material/Code';
+import AppleIcon from '@mui/icons-material/Apple';
+import AndroidIcon from '@mui/icons-material/Android';
+import LineStyleIcon from '@mui/icons-material/LineStyle';
+import FormatPaintIcon from '@mui/icons-material/FormatPaint';
+
 const ToolsList:ToolElement[] = [
-  { icon:'html', title:'HTML', },
-  { icon:'js', title:'JS', },
-  { icon:'js', title:'TS', },
-  { icon:'js', title:'React', },
-  { icon:'js', title:'Angular', },
-  { icon:'js', title:'React Native', },
-  { icon:'js', title:'Node JS'},
-  { icon:'android', title:'Kotlin', },
-  { icon:'android', title:'Java', },
-  { icon:'css', title:'Bootstrap', },
-  { icon:'css', title:'MUI', },
-  { icon:'css', title:'Tailwind', },
+  { icon:CodeIcon, title:'HTML', },
+  { icon:LineStyleIcon, title:'JS', },
+  { icon:LineStyleIcon, title:'TS', },
+  { icon:LineStyleIcon, title:'React', },
+  { icon:LineStyleIcon, title:'Angular', },
+  { icon:LineStyleIcon, title:'React Native', },
+  { icon:LineStyleIcon, title:'Node JS'},
+  { icon:AndroidIcon, title:'Kotlin', },
+  { icon:AndroidIcon, title:'Java', },
+  { icon:AppleIcon, title:'Swift', },
+  { icon:FormatPaintIcon, title:'Bootstrap', },
+  { icon:FormatPaintIcon, title:'MUI', },
+  { icon:FormatPaintIcon, title:'Tailwind', },
 ];
 
 export type ToolElement = {
   title:string;
-  icon:PossibleIcons;
+  icon:any;
 }
-
-export type PossibleIcons = 'html' | 'css' | 'js' | 'android'
 
 export default ToolsList;

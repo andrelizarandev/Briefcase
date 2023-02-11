@@ -35,6 +35,7 @@ function ExperienceCard (data:ExperienceData) {
             <Typography variant='caption'>{description}</Typography>
           </Stack>
         </Stack>
+        <Stack sx={ExperienceSectionStyle.BottomBorder}/>
       </Paper>
     </GridXS12MD6LG4>
   )

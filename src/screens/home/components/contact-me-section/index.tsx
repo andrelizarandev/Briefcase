@@ -28,7 +28,9 @@ function ContactCard (props:ContactData)  {
       <Paper>
         <Stack sx={ContactMeSectionStyle.ContactCardPaddingContainer}>
           <Typography variant='subtitle2' textTransform='uppercase'>{props.title}</Typography>
-          <GreenFilledButton endIcon={<props.icon/>}>{props.buttonText}</GreenFilledButton>
+          <a href={props.link} target="_blank">
+            <GreenFilledButton endIcon={<props.icon/>}>{props.buttonText}</GreenFilledButton>
+          </a>
         </Stack>
       </Paper>
     </GridXS6MD4 >

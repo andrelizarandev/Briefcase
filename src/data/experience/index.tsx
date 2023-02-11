@@ -2,19 +2,19 @@ export const ExperienceList:ExperienceData[] = [
   { 
     title:'Medio Melon', 
     subtitle:'Frontend Developer',
-    description:'Desarrollo en plataformas web con Angular, React y Java para bancos y farmacias.',
+    description:'Web development in platforms using Angular, React and Java for banks and pharmacies.',
     img:'/medio-melon-logo.png' 
   },
   { 
     title:'Blau Corp', 
     subtitle:'Frontend / Mobile Developer',
-    description:'Desarrollo de plataforma en React para la gestión de recolección de residuos en el estado de Jalisco.',
+    description:'Web development in platforms using React for waste collection management in the state of Jalisco.',
     img:'/blau-logo.png' 
   },
   { 
     title:'Sunkai', 
     subtitle:'Frontend / Mobile Developer',
-    description:'Desarrollo de plataforma web para la recolección de cultivos en Perú, haciendo uso de una aplicación móvil para el registro de estos.', 
+    description:'Web development in platforms using React for the recollection of crops in Peru, using a mobile application to register them.', 
     img:'/sunkai-logo.png'
   },
 ]
