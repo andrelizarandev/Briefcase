@@ -1,8 +1,8 @@
 // Modules
 import { Stack } from '@mui/material';
-import IndigoChip from '../../../../components/_chips/indigo-chip ';
 
 // Components
+import IndigoChip from '../../../../components/_chips/indigo-chip ';
 import SectionContainer from '../../../../containers/section-container';
 
 // Icons

@@ -1,18 +1,21 @@
 // Modules
-import { Grid, Paper, Stack, Typography } from '@mui/material';
 import { grey } from '@mui/material/colors';
+import { Grid, Paper, Stack, Typography } from '@mui/material';
+
+// Components
+import SectionContainer from '../../../../containers/section-container';
 
 // Data
-import { selfDescription } from '../../../../data/about-me'
+import { selfDescription } from '../../../../data/about-me';
 
 export default function AboutMeSection () {
   return (
-    <Stack rowGap={2}>
-      <Typography variant='subtitle2' textTransform='uppercase'>About Me</Typography>
+    <SectionContainer title='About Me'>
+      <Typography variant='subtitle2' textTransform='uppercase'></Typography>
       <Grid container>
         <SelfDescriptionCard/>
       </Grid>
-    </Stack>
+    </SectionContainer>
   )
 }
 

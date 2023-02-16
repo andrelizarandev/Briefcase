@@ -17,12 +17,6 @@ const ExperienceSectionStyle = {
     height:'50px'
   },
 
-  BottomBorder: {
-    backgroundColor:lightGreen[400],
-    borderRadius:'0 0 4px 4px',
-    paddingY:.3
-  }
-
 }
 
 export default ExperienceSectionStyle;

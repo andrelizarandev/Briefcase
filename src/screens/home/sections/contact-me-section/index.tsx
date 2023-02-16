@@ -3,6 +3,7 @@ import { Grid, Paper, Stack, Typography } from '@mui/material';
 
 // Components
 import GridXS6MD4 from '../../../../components/_grid/grid-xs6-md3';
+import SectionContainer from '../../../../containers/section-container';
 import GreenFilledButton from '../../../../components/_buttons/green-filled-button';
 
 // Data
@@ -13,12 +14,11 @@ import ContactMeSectionStyle from './style';
 
 export default function ContactMeSection () {
   return (
-    <Stack rowGap={2}>
-      <Typography variant='subtitle2' textTransform='uppercase'>Contact Me</Typography>
+    <SectionContainer title='Contact Me'>
       <Grid container spacing={2}>
         {ContactList.map((data, key) => <ContactCard key={key} {...data}/> )}
       </Grid>
-    </Stack>
+    </SectionContainer>
   )
 }
 

@@ -1,24 +1,21 @@
 // Modules
-import { Grid, Stack, Typography } from '@mui/material';
+import { Grid } from '@mui/material';
 
 // Components
 import CardStack from '../../../../components/_common/card-stack';
 import GridXS12MD6 from '../../../../components/_grid/grid-xs12-md6';
+import SectionContainer from '../../../../containers/section-container';
 
 // Data
 import { EducationCardContent, EducationList } from '../../../../data/education';
 
 export default function EducationSection () {
   return (
-    <Stack rowGap={2}>
-      <Typography 
-        variant='subtitle2' 
-        textTransform='uppercase'
-      >Education</Typography>
+    <SectionContainer title='Education'>
       <Grid container spacing={2}>
         {EducationList.map((data, key) => <EducationCard {...data} key={key}/>)}
       </Grid>
-    </Stack>
+    </SectionContainer>
   )
 }
 

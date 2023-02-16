@@ -33,6 +33,14 @@ const FlexStyle = {
     rowGap:2
   },
 
+  RowJustifyCenterColumnGap2RowGap2:{ 
+    flexDirection:'row',
+    columnGap:2,
+    flexWrap:'wrap',
+    rowGap:2,
+    justifyContent:'center'
+  },
+
 }
 
 export default FlexStyle;

@@ -3,6 +3,7 @@ import { grey } from '@mui/material/colors';
 import { Grid, Paper, Stack, Typography } from '@mui/material';
 
 // Components
+import SectionContainer from '../../../../containers/section-container';
 import GridXS12MD6LG4 from '../../../../components/_grid/grid-xs12-md6-lg4';
 
 // Data
@@ -13,12 +14,11 @@ import ExperienceSectionStyle from './style';
 
 export default function ExperienceSection () {
   return (
-    <Stack rowGap={2}>
-      <Typography variant='subtitle2' textTransform='uppercase'>Experience</Typography>
+    <SectionContainer title='Experience'>
       <Grid container spacing={2}>
         {ExperienceList.map((data, key) => <ExperienceCard key={key} {...data}/>)}
       </Grid>
-    </Stack>
+    </SectionContainer>
   )
 }
 
@@ -35,7 +35,6 @@ function ExperienceCard (data:ExperienceData) {
             <Typography variant='caption'>{description}</Typography>
           </Stack>
         </Stack>
-        <Stack sx={ExperienceSectionStyle.BottomBorder}/>
       </Paper>
     </GridXS12MD6LG4>
   )
