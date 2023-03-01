@@ -7,17 +7,18 @@ import GridXS12MD6 from '../../../../components/_grid/grid-xs12-md6';
 import SectionContainer from '../../../../containers/section-container';
 
 // Data
-import { EducationCardContent, EducationList } from '../../../../data/education';
+import useEducationData, { EducationCardContent } from '../../../../data/education';
 
 // Hooks
 import useGeneralData from '../../../../data/general';
 
 export default function EducationSection () {
   const { education } = useGeneralData();
+  const { getEducationData } = useEducationData();
   return (
     <SectionContainer title={education}>
       <Grid container spacing={2}>
-        {EducationList.map((data, key) => <EducationCard {...data} key={key}/>)}
+        {getEducationData().map((data, key) => <EducationCard {...data} key={key}/>)}
       </Grid>
     </SectionContainer>
   )

@@ -6,21 +6,20 @@ import { Grid, Paper, Stack, Typography } from '@mui/material';
 import SectionContainer from '../../../../containers/section-container';
 import GridXS12MD6LG4 from '../../../../components/_grid/grid-xs12-md6-lg4';
 
-// Data
-import { ExperienceData, ExperienceList } from '../../../../data/experience';
-
 // Hooks
 import useGeneralData from '../../../../data/general';
+import useExperienceData, { ExperienceData } from '../../../../data/experience';
 
 // Style
 import ExperienceSectionStyle from './style';
 
 export default function ExperienceSection () {
   const { experience } = useGeneralData();
+  const { getExperienceData } = useExperienceData();
   return (
     <SectionContainer title={experience}>
       <Grid container spacing={2}>
-        {ExperienceList.map((data, key) => <ExperienceCard key={key} {...data}/>)}
+        {getExperienceData().map((data, key) => <ExperienceCard key={key} {...data}/>)}
       </Grid>
     </SectionContainer>
   )

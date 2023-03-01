@@ -5,6 +5,9 @@ import { Stack } from '@mui/material';
 import SectionContainer from '../../../../containers/section-container';
 import GreenFilledButton from '../../../../components/_buttons/green-filled-button';
 
+// Hooks
+import useCv from '../../../../data/cv';
+
 // Icons
 import DownloadIcon from '@mui/icons-material/Download';
 
@@ -12,18 +15,17 @@ import DownloadIcon from '@mui/icons-material/Download';
 import FlexStyle from '../../../../styles/flex'
 
 export default function CvSection () {
+  
   return (
     <SectionContainer title='CV'>
       <Stack sx={FlexStyle.RowColumnGap2}>
-
-        <a href="/cv/CV-EN.pdf" target="_blank">
-          <GreenFilledButton startIcon={<DownloadIcon/>}>In Engligh</GreenFilledButton>
-        </a>
-
-        <a href="/cv/CV-ES.pdf" target="_blank">
-          <GreenFilledButton startIcon={<DownloadIcon/>}>In Spanish</GreenFilledButton>
-        </a>
-
+        {
+          useCv().map(({ link, title }) => (
+            <a href={link} target="_blank">
+              <GreenFilledButton startIcon={<DownloadIcon/>}>{title}</GreenFilledButton>
+            </a>
+          ))
+        }
       </Stack>
     </SectionContainer>
   )
