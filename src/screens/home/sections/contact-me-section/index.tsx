@@ -4,7 +4,7 @@ import { Grid, Paper, Stack, Typography } from '@mui/material';
 // Components
 import GridXS6MD4 from '../../../../components/_grid/grid-xs6-md3';
 import SectionContainer from '../../../../containers/section-container';
-import GreenFilledButton from '../../../../components/_buttons/green-filled-button';
+import IndigoButton from '../../../../components/_buttons/blue-button copy';
 
 // Data
 import { ContactData, ContactList } from '../../../../data/contact-me';
@@ -29,7 +29,7 @@ function ContactCard (props:ContactData)  {
         <Stack sx={ContactMeSectionStyle.ContactCardPaddingContainer}>
           <Typography variant='subtitle2' textTransform='uppercase'>{props.title}</Typography>
           <a href={props.link} target="_blank">
-            <GreenFilledButton endIcon={<props.icon/>}>{props.buttonText}</GreenFilledButton>
+            <IndigoButton endIcon={<props.icon/>}>{props.buttonText}</IndigoButton>
           </a>
         </Stack>
       </Paper>

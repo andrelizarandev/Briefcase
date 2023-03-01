@@ -3,7 +3,7 @@ import FlexStyle from "../../../../styles/flex";
 const ContactMeSectionStyle = {
 
   ContactCardPaddingContainer: {
-    ...FlexStyle.RowAlignCenterJustifyBetween,
+    ...FlexStyle.XSVStackMDRStack,
     padding:2,
     rowGap:1
   }

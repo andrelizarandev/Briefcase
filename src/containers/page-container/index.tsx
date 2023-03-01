@@ -31,9 +31,6 @@ function TopBar () {
       <Stack sx={PageContainerStyle.TopBarPaddingContainer}>
         <Typography color='white' variant='subtitle2' textTransform='uppercase'>André Lizarán</Typography>
         <Stack sx={FlexStyle.RowColumnGap2}>
-          <Stack sx={FlexStyle.Row}>
-            <WhiteTextButton size='small'>Contact Me</WhiteTextButton>
-          </Stack>
           <GreenFilledButton size='small'>Change Languaje</GreenFilledButton>
         </Stack>
       </Stack>

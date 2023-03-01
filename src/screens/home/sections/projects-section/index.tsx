@@ -8,14 +8,16 @@ import SectionContainer from '../../../../containers/section-container';
 
 // Data
 import { ProjectData, projectsDataArray } from '../../../../data/projects';
-import FlexStyle from '../../../../styles/flex';
+
+// Styles
 import ProjectSectionStyle from './style';
+import FlexStyle from '../../../../styles/flex';
 
 export default function ProjectsSection () {
   return (
    <SectionContainer title='Projects'>
     <Grid container spacing={2}>
-      {projectsDataArray.map((data) => <ProjectCard {...data}/>)}
+      {projectsDataArray.map((data, key) => <ProjectCard {...data} key={key}/>)}
     </Grid>
    </SectionContainer>
 
@@ -40,8 +42,8 @@ function ProjectCard (props:ProjectData) {
 function TechnologiesList (props:any) {
   const { technologies } = props;
   return (
-    <Stack sx={FlexStyle.RowJustifyCenterColumnGap2RowGap2}>
-      {technologies.map((tech:string) => <GreenChip label={tech}/>)}
+    <Stack sx={FlexStyle.HStackJustifyCenter}>
+      {technologies.map((tech:string, key:number) => <GreenChip label={tech} key={key}/>)}
     </Stack>
   )
 }

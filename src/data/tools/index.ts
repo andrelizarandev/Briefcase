@@ -14,6 +14,7 @@ const ToolsList:ToolElement[] = [
   { icon:LineStyleIcon, title:'TS' },
   { icon:LineStyleIcon, title:'React' },
   { icon:LineStyleIcon, title:'Angular' },
+  { icon:LineStyleIcon, title:'Next JS' },
   { icon:LineStyleIcon, title:'React Native' },
   { icon:LineStyleIcon, title:'Node JS' },
   { icon:AndroidIcon, title:'Kotlin' },

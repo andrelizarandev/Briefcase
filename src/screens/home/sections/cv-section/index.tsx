@@ -15,8 +15,15 @@ export default function CvSection () {
   return (
     <SectionContainer title='CV'>
       <Stack sx={FlexStyle.RowColumnGap2}>
-        <GreenFilledButton startIcon={<DownloadIcon/>}>In Engligh</GreenFilledButton>
-        <GreenFilledButton startIcon={<DownloadIcon/>}>In Spanish</GreenFilledButton>
+
+        <a href="/cv/CV-EN.pdf" target="_blank">
+          <GreenFilledButton startIcon={<DownloadIcon/>}>In Engligh</GreenFilledButton>
+        </a>
+
+        <a href="/cv/CV-ES.pdf" target="_blank">
+          <GreenFilledButton startIcon={<DownloadIcon/>}>In Spanish</GreenFilledButton>
+        </a>
+
       </Stack>
     </SectionContainer>
   )

@@ -11,10 +11,7 @@ import { selfDescription } from '../../../../data/about-me';
 export default function AboutMeSection () {
   return (
     <SectionContainer title='About Me'>
-      <Typography variant='subtitle2' textTransform='uppercase'></Typography>
-      <Grid container>
-        <SelfDescriptionCard/>
-      </Grid>
+      <SelfDescriptionCard/>
     </SectionContainer>
   )
 }

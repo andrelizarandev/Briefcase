@@ -6,10 +6,7 @@ const FlexStyle = {
   },
 
   RowAlignCenterJustifyBetween: {
-    flexDirection:{
-      xs:'column',
-      md:'row'
-    },
+    flexDirection:'row',
     alignItems:'center',
     justifyContent:'space-between',
     rowGap:1
@@ -33,13 +30,27 @@ const FlexStyle = {
     rowGap:2
   },
 
-  RowJustifyCenterColumnGap2RowGap2:{ 
+  HStackJustifyCenter:{ 
     flexDirection:'row',
     columnGap:2,
-    flexWrap:'wrap',
     rowGap:2,
+    flexWrap:'wrap',
     justifyContent:'center'
   },
+
+  XSVStackMDRStack: {
+    flexDirection: {
+      xs:'column',
+      md:'row'
+    },
+    columnGap:2,
+    rowGap:2,
+    alignItems:'center',
+    justifyContent:{
+      xs:'center',
+      md:'space-between'
+    }
+  }
 
 }
 
