@@ -18,7 +18,9 @@ export default function PageContainer (props:Props) {
       <TopBar/>
       <Stack sx={PageContainerStyle.MainContainer}>
         <Stack sx={PageContainerStyle.MainPaddingContainer}>
-          {props.children}
+          <Stack sx={PageContainerStyle.MainPaddingHelperContainer}>
+            {props.children}
+          </Stack>
         </Stack>
       </Stack>
     </>
