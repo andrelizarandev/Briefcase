@@ -9,13 +9,17 @@ import SectionContainer from '../../../../containers/section-container';
 // Data
 import { ProjectData, projectsDataArray } from '../../../../data/projects';
 
+// Hooks
+import useGeneralData from '../../../../data/general';
+
 // Styles
 import ProjectSectionStyle from './style';
 import FlexStyle from '../../../../styles/flex';
 
 export default function ProjectsSection () {
+  const { projects } = useGeneralData();
   return (
-   <SectionContainer title='Projects'>
+   <SectionContainer title={projects}>
     <Grid container spacing={2}>
       {projectsDataArray.map((data, key) => <ProjectCard {...data} key={key}/>)}
     </Grid>

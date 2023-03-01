@@ -1,10 +1,15 @@
 // Modules
-import { ReactNode } from 'react';
-import { Button, Stack, Typography } from '@mui/material';
+import { ReactNode, useContext } from 'react';
+import { Stack, Typography } from '@mui/material';
 
 // Components
-import WhiteTextButton from '../../components/_buttons/white-text-button';
 import GreenFilledButton from '../../components/_buttons/green-filled-button';
+
+// Contexts
+import { MainContext } from '../../contexts';
+
+// Hooks
+import useGeneralData from '../../data/general';
 
 // Style
 import PageContainerStyle from './style';
@@ -28,12 +33,14 @@ export default function PageContainer (props:Props) {
 }
 
 function TopBar () {
+  const { toggleLanguage } = useContext(MainContext);
+  const { btnChangeLanguage } = useGeneralData();
   return (
     <Stack sx={PageContainerStyle.TopBarContainer}>
       <Stack sx={PageContainerStyle.TopBarPaddingContainer}>
         <Typography color='white' variant='subtitle2' textTransform='uppercase'>André Lizarán</Typography>
         <Stack sx={FlexStyle.RowColumnGap2}>
-          <GreenFilledButton size='small'>Change Languaje</GreenFilledButton>
+          <GreenFilledButton size='small' onClick={toggleLanguage}>{btnChangeLanguage}</GreenFilledButton>
         </Stack>
       </Stack>
     </Stack>

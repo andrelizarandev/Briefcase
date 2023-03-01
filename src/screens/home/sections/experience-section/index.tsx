@@ -9,12 +9,16 @@ import GridXS12MD6LG4 from '../../../../components/_grid/grid-xs12-md6-lg4';
 // Data
 import { ExperienceData, ExperienceList } from '../../../../data/experience';
 
+// Hooks
+import useGeneralData from '../../../../data/general';
+
 // Style
 import ExperienceSectionStyle from './style';
 
 export default function ExperienceSection () {
+  const { experience } = useGeneralData();
   return (
-    <SectionContainer title='Experience'>
+    <SectionContainer title={experience}>
       <Grid container spacing={2}>
         {ExperienceList.map((data, key) => <ExperienceCard key={key} {...data}/>)}
       </Grid>

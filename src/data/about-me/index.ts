@@ -1,1 +1,0 @@
-export const selfDescription = 'Hi, I am Andre Lizaran, frontend developer (fullstack in process). I love making clean and useful apps/interfaces. My favorite programming language is Typescript. Im from Veracruz, Mexico.'

@@ -9,9 +9,13 @@ import SectionContainer from '../../../../containers/section-container';
 // Data
 import { EducationCardContent, EducationList } from '../../../../data/education';
 
+// Hooks
+import useGeneralData from '../../../../data/general';
+
 export default function EducationSection () {
+  const { education } = useGeneralData();
   return (
-    <SectionContainer title='Education'>
+    <SectionContainer title={education}>
       <Grid container spacing={2}>
         {EducationList.map((data, key) => <EducationCard {...data} key={key}/>)}
       </Grid>

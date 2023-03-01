@@ -6,17 +6,20 @@ import GridXS6MD4 from '../../../../components/_grid/grid-xs6-md3';
 import SectionContainer from '../../../../containers/section-container';
 import IndigoButton from '../../../../components/_buttons/blue-button copy';
 
-// Data
-import { ContactData, ContactList } from '../../../../data/contact-me';
+// Hooks
+import useGeneralData from '../../../../data/general';
+import useGetContactMeData, { ContactData } from '../../../../data/contact-me';
 
 // Style
 import ContactMeSectionStyle from './style';
 
 export default function ContactMeSection () {
+  const { getContactList } = useGetContactMeData();
+  const { contactMe } = useGeneralData();
   return (
-    <SectionContainer title='Contact Me'>
+    <SectionContainer title={contactMe}>
       <Grid container spacing={2}>
-        {ContactList.map((data, key) => <ContactCard key={key} {...data}/> )}
+        {getContactList().map((data, key) => <ContactCard key={key} {...data}/> )}
       </Grid>
     </SectionContainer>
   )
