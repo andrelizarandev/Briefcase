@@ -20,7 +20,7 @@ const generalDataSpanish = {
   btnChangeLanguage:'Cambiar Idioma',
   aboutMe:'Sobre Mí',
   education:'Educación',
-  languages:'Lenguajes',
+  languages:'Idiomas',
   experience:'Experiencia',
   projects:'Proyectos',
   contactMe:'Contáctame'
