@@ -31,13 +31,7 @@ export const ExperienceListEnglish:ExperienceData[] = [
     subtitle:'Frontend / Mobile Developer',
     description:'Web development in platforms using React for waste collection management in the state of Jalisco.',
     img:'/blau-logo.png' 
-  },
-  { 
-    title:'Sunkai', 
-    subtitle:'Frontend / Mobile Developer',
-    description:'Web development in platforms using React for the recollection of crops in Peru, using a mobile application to register them.', 
-    img:'/sunkai-logo.png'
-  },
+  }
 ];
 
 export const ExperienceListSpanish:ExperienceData[] = [

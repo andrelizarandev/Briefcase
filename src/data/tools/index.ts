@@ -3,6 +3,7 @@ import CodeIcon from '@mui/icons-material/Code';
 import AppleIcon from '@mui/icons-material/Apple';
 import AndroidIcon from '@mui/icons-material/Android';
 import StorageIcon from '@mui/icons-material/Storage';
+import WbCloudyIcon from '@mui/icons-material/WbCloudy';
 import LineStyleIcon from '@mui/icons-material/LineStyle';
 import FormatPaintIcon from '@mui/icons-material/FormatPaint';
 import DesignServicesIcon from '@mui/icons-material/DesignServices';
@@ -27,6 +28,7 @@ const ToolsList:ToolElement[] = [
   { icon:StorageIcon, title:'MongoDB' },
   { icon:StorageIcon, title:'MySQL' },
   { icon:DesignServicesIcon, title:'Figma / Miro' },
+  { icon:WbCloudyIcon, title:'AWS (EC2, S3)' },
 ];
 
 export type ToolElement = {
